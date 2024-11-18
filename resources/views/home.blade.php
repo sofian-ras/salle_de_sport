@@ -1,97 +1,53 @@
-{{-- resources/views/home.blade.php --}}
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page d'Accueil - Salle de Sport</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-image: url();
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-            color: #333;
-        }
-        .header {
-            background-image: url('/images/banniere.webp');
-            width: 100%;
-            height: 60vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: rgb(76, 5, 199);
-            text-shadow: 2px 2px 4px rgba(196, 170, 170, 0.7);
-        }
-        .header h1 {
-            font-size: 3rem;
-        }
-        .bouton {
-            background-color: #28a745;
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            display: inline-block;
-        }
+@extends('base')
 
-        .colonne {
-            flex: 1;
-            min-width: 250px; 
-            max-width: 32%;
-            margin: 10px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
+@section('content')
+    <!-- Section Bannière -->
+    <section id="banniere" class="banniere">
+        <div class="contenu-banniere">
+            <h1>Transformez votre corps, dépassez vos limites !</h1>
+            <p>Rejoignez-nous pour atteindre vos objectifs et révéler votre plein potentiel.</p>
+            <a href="{{ route('tarifs') }}" class="bouton">Voir les Tarifs</a>
+        </div>
+    </section>
 
-
-    <div class="header">
-        <h1>Bienvenue dans notre Salle de Sport !</h1>
-    </div>
-
-    <div class="container">
-        <h2>Nos Services</h2>
-        <p>Découvrez nos différentes offres et programmes d'abonnement.</p>
-
-        <div class="row">
-            <div class="colonne">
-                <div class="carte-body">
-                    <div class="carte">
-                        <h5 class="Titre">Abonnements</h5>
-                        <p class="desc">Accédez à nos forfaits d'abonnement flexibles adaptés à vos besoins.</p>
-                        <a href="{{ url('abonnements') }}" class="bouton">Voir les Abonnements</a>
-                    </div>
-                </div>
+    <!-- Section Messages Motivants -->
+    <section id="motivation" class="section-motivation">
+        <h2>Motivation du Jour</h2>
+        <div class="cartes-motivation">
+            <div class="carte-motivation">
+                <img src="/images/sportif3.jpg" alt="Force et Persévérance" class="image-motivation">
+                <h3>La Force est en Vous</h3>
+                <p>Atteindre vos objectifs demande de la persévérance. Chaque entraînement vous rapproche un peu plus de la meilleure version de vous-même.</p>
             </div>
-
-            <div class="colonne">
-                <div class="carte-body">
-                    <div class="carte">
-                        <h5 class="Titre">Équipements</h5>
-                        <p class="desc">Découvrez notre équipement de pointe pour un entraînement efficace.</p>
-                        <a href="#" class="bouton">Voir les Équipements</a>
-                    </div>
-                </div>
+            <div class="carte-motivation">
+                <img src="/images/sportif1.jpg" alt="Endurance" class="image-motivation">
+                <h3>Repoussez vos Limites</h3>
+                <p>Chaque jour est une nouvelle opportunité pour tester vos limites et repousser les barrières. Votre endurance est sans limites !</p>
             </div>
-
-            <div class="colonne">
-                <div class="carte-body">
-                    <div class="carte">
-                        <h5 class="Titre">Programmes</h5>
-                        <p class="desc">Rejoignez nos programmes de formation adaptés à tous les niveaux.</p>
-                        <a href="#" class="bouton">Voir les Programmes</a>
-                    </div>
-                </div>
+            <div class="carte-motivation">
+                <img src="/images/sportif2.jpg" alt="Focus et Discipline" class="image-motivation">
+                <h3>Focus et Discipline</h3>
+                <p>La discipline est la clé du succès. Restez concentré sur votre objectif, et vous accomplirez des choses incroyables.</p>
             </div>
         </div>
-    </div>
+    </section>
 
-
-</body>
-</html>
+    <!-- Section Aperçu des Cours -->
+    <section id="aperçu-cours" class="section-apercu">
+        <h2>Nos Cours Populaires</h2>
+        <div class="cartes-apercu">
+            <div class="carte-apercu">
+                <img src="/images/yoga.jpg" alt="Fitness et Bien-être" class="image-apercu">
+                <h3>Fitness et Bien-être</h3>
+                <p>Des exercices adaptés pour tonifier votre corps et retrouver la forme.</p>
+                <a href="{{ route('tarifs') }}" class="bouton">Voir les Tarifs</a>
+            </div>
+            <div class="carte-apercu">
+                <img src="images/fitness.jpg" alt="Yoga et Relaxation" class="image-apercu">
+                <h3>Yoga et Relaxation</h3>
+                <p>Améliorez votre souplesse et apaisez votre esprit avec nos séances de yoga.</p>
+                <a href="{{ route('tarifs') }}" class="bouton">Voir les Tarifs</a>
+            </div>
+        </div>
+    </section>
+@endsection

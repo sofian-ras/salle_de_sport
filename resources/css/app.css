@@ -1,0 +1,315 @@
+body {
+    background-color: #212121;
+    color: #f4f4f4;
+}
+
+/* entête */
+
+.header-bar {
+    background-image:url(/public/images/banniere.JPG);
+    padding: 10px 20px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-link {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 30px; 
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff5722;
+    background-color: rgba(255, 87, 34, 0.2);
+    transform: scale(1.1);
+}
+
+
+
+/* Section Principale */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #ff5722;
+}
+
+/* Container des Tarifs */
+.tarif-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    height: 250px;
+    margin-top: 30px;
+}
+
+/* Carte Tarif */
+.tarif {
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+/* Effet au survol de la carte tarif */
+.tarif:hover {
+    transform: scale(1.05);
+}
+
+/* Titre des cartes */
+.tarif h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #ff5722;
+}
+
+/* Texte de la carte tarif */
+.tarif p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #f4f4f4;
+}
+
+.bouton-cta{
+    color: #e64a19;
+}
+
+/* Bouton dans la carte tarif */
+.bouton {
+    background-color: #ff5722;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+/* Section des cours */
+.section-cours {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section-cours h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #ff5722;
+}
+
+.liste-cours {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.carte-cours {
+    background-color: #333;
+    padding: 25px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.carte-cours:hover {
+    transform: scale(1.05);
+}
+
+.carte-cours h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff5722;
+}
+
+.carte-cours p {
+    font-size: 16px;
+    color: #f4f4f4;
+    margin: 5px 0;
+}
+
+
+/* Effet au survol du bouton */
+.bouton:hover {
+    background-color: #e64a19;
+}
+
+
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('/public/images/banniereFooter.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer ul li a:hover {
+    color: #ff5722;
+}
+
+/* CSS de la homePage---------------------------------- */
+
+/* Bannière */
+.banniere {
+    background-image: url('/images/banniere.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #f4f4f4;
+}
+
+.contenu-banniere h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contenu-banniere p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.contenu-banniere .bouton-cta {
+    font-size: 18px;
+}
+
+/* Section Motivation */
+.section-motivation {
+    padding: 50px 20px;
+    background-color: #212121;
+    text-align: center;
+}
+
+.section-motivation h2 {
+    color: #ff5722;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.cartes-motivation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.carte-motivation {
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.carte-motivation:hover {
+    transform: scale(1.05);
+}
+
+.image-motivation {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.carte-motivation h3 {
+    font-size: 24px;
+    color: #ff5722;
+    margin-top: 15px;
+}
+
+.carte-motivation p {
+    font-size: 16px;
+    color: #f4f4f4;
+    margin-top: 10px;
+}
+
+/* Section Aperçu des Cours */
+.section-apercu {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section-apercu h2 {
+    color: #ff5722;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.cartes-apercu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.carte-apercu {
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.carte-apercu:hover {
+    transform: scale(1.05);
+}
+
+.image-apercu {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.carte-apercu h3 {
+    font-size: 24px;
+    color: #ff5722;
+    margin-top: 15px;
+}
+
+.carte-apercu p {
+    font-size: 16px;
+    color: #f4f4f4;
+    margin-top: 10px;
+}
