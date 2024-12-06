@@ -3,7 +3,7 @@
 @section('title', 'Cours')
 
 @section('content')
-    <section class="section-cours">
+    <div class="section-cours">
         <h2>Nos Cours</h2>
         <div class="liste-cours">
             <div class="carte-cours">
@@ -32,5 +32,37 @@
                 <p>Un cours de Yoga pour détendre votre corps et votre esprit tout en améliorant votre flexibilité.</p>
             </div>
         </div>
-    </section>
+    </div>
+    <div class="section-coachs">
+        <h2>Nos Coachs</h2>
+        <div class="liste-coachs">
+            <div class="carte-coach">
+                <div class="coach1"></div>
+                <h3>Chad gibson</h3>
+                <p>Spécialité : Boxe</p>
+                <p>Description : Expert en art martial avec 12 ans d'expérience.</p>
+            </div>
+
+            <div class="carte-coach">
+                <div class="coach2"></div>
+                <h3>Juliana Silva</h3>
+                <p>Spécialité : Yoga</p>
+                <p>Description : Experte en danse et fitness avec 5 ans d'expérience.</p>
+            </div>
+            
+            <div class="carte-coach">
+                <div class="coach3"></div>
+                <h3>Morgan maxwell</h3>
+                <p>Spécialité : HIIT</p>
+                <p>Description : champion en danse rythmique  avec 4 ans d'expérience.</p>
+            </div>
+            
+            
+            <div class="carte-coach">
+                <div class="coach4"></div>
+                <h3>Aaron loeb</h3>
+                <p>Spécialité : Musculation</p>
+                <p>Description : Nutritioniste ,expert en bobybuilding avec 8 ans d'expérience.</p>
+            </div>
+            
 @endsection

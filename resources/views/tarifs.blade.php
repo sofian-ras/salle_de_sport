@@ -3,8 +3,7 @@
 @section('title', 'Tarifs')
 
 @section('content')
-    <!-- Section Tarifs -->
-    <section id="tarifs" class="section">
+    <div class="tarifs">
         <h2>Nos Tarifs</h2>
         <div class="tarif-container">
             <div class="tarif">
@@ -33,5 +32,5 @@
                 <button class="bouton">Choisir</button>
             </div>
         </div>
-    </section>
+    </div>
 @endsection

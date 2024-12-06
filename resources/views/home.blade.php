@@ -43,7 +43,7 @@
                 <a href="{{ route('tarifs') }}" class="bouton">Voir les Tarifs</a>
             </div>
             <div class="carte-apercu">
-                <img src="images/fitness.jpg" alt="Yoga et Relaxation" class="image-apercu">
+                <img src="/images/yoga_femme.jpg" alt="Yoga et Relaxation" class="image-apercu">
                 <h3>Yoga et Relaxation</h3>
                 <p>Améliorez votre souplesse et apaisez votre esprit avec nos séances de yoga.</p>
                 <a href="{{ route('tarifs') }}" class="bouton">Voir les Tarifs</a>
